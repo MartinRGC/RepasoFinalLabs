@@ -11,9 +11,8 @@ import com.algarrobo.repasofinallabs.R
 class CourseAdapter(private var lstCourse: List<CursoModel>):RecyclerView.Adapter<CourseAdapter.ViewHolder>(){
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
-        val tvDescription: TextView = itemView.findViewById(R.id.tvCurso)
-        val tvScore: TextView = itemView.findViewById(R.id.tvNota)
-
+        val tvDescription: TextView = itemView.findViewById(R.id.tvcurso)
+        val tvScore: TextView = itemView.findViewById(R.id.tvnota)
 
     }
 
