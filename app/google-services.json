@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "449590528815",
+    "project_id": "repasofinallabs",
+    "storage_bucket": "repasofinallabs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449590528815:android:3808a24784c18347c92fda",
+        "android_client_info": {
+          "package_name": "com.algarrobo.repasofinallabs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Lnw3_5vkc_Ee5YDU2KnUJJiWiO0-qxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
