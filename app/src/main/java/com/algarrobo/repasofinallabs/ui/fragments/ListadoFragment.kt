@@ -39,13 +39,13 @@ class ListadoFragment : Fragment() {
                         DocumentChange.Type.ADDED -> {
                             lstcourses.add(
                                 CursoModel(dc.document.data["description"].toString(),
-                                dc.document.data["score"].toString()))
+                                dc.document.data["score"].toString(), dc.document.data["imageUrl"].toString()))
                                 rvCourse.adapter = CourseAdapter(lstcourses)
                         }
                         DocumentChange.Type.MODIFIED ->{
                             lstcourses.add(
                                 CursoModel(dc.document.data["description"].toString(),
-                                    dc.document.data["score"].toString()))
+                                    dc.document.data["score"].toString(), dc.document.data["imageUrl"].toString()))
                             rvCourse.adapter = CourseAdapter(lstcourses)
 
                         }

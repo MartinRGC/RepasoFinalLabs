@@ -3,16 +3,19 @@ package com.algarrobo.repasofinallabs.Adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.algarrobo.repasofinallabs.Models.CursoModel
 import com.algarrobo.repasofinallabs.R
+import com.squareup.picasso.Picasso
 
 class CourseAdapter(private var lstCourse: List<CursoModel>):RecyclerView.Adapter<CourseAdapter.ViewHolder>(){
     class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
         val tvDescription: TextView = itemView.findViewById(R.id.tvcurso)
         val tvScore: TextView = itemView.findViewById(R.id.tvnota)
+        val ivNota: ImageView = itemView.findViewById(R.id.ivNota)
 
     }
 
@@ -29,6 +32,7 @@ class CourseAdapter(private var lstCourse: List<CursoModel>):RecyclerView.Adapte
             val itemcourse = lstCourse[position]
             holder.tvDescription.text = itemcourse.description
             holder.tvScore.text = itemcourse.score
+            Picasso.get().load(itemcourse.imageUrl).into(holder.ivNota)
 
     }
 
